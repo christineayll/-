@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100,300,4000,700,800&display=swap');
+
+:root {
+    --primary-color: #61CE70;
+    --secondary-color: #C2C5C5;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-snap-destination: 50% 0%;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Use a custom cubic-bezier for slower transition */
+}
+
+
+
+body {
+    background: #000;
+    color: #ffff !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+}
+
+/* Navigation */
+a {
+    text-decoration: none !important;
+    color: #ffff;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 3%;
+}
+
+h2{
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+}
+
+h5{
+    font-size: 30px;
+}
+
+
+span{
+    color: var(--primary-color);
+}
+
+.container {
+    padding: 20px 70px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header .right ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.header .right ul li {
+    margin-left: 13px !important;
+}
+
+.header .right ul li a {
+    text-transform: uppercase;
+}
+
+.header .right ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Scroll */
+
+
+
+/* Home */
+
+.introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.objective {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.objective-text h1{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.objective-text p{
+    margin-top: 10px;
+}
+
+.objective>*:not(:first-child) {
+    margin-top: 30px;
+    /* Adjust the margin value as needed */
+}
+
+/* .buttons>*:not(:first-child) {
+    margin-left: 8px;
+} */
+
+.buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+.btn{
+    padding: 10px 14px;
+    border-radius: 50px;
+    background: rgb(37,37,37);
+    letter-spacing: 1px;
+    transition: transform 0.3s ease-in-out !important;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.objective-text h1{
+
+    color: var(--primary-color);
+    font-size: 35px;
+}
+
+.objective-text p{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.btn-about{
+    padding: 12px 16px;
+    border: solid var(--primary-color);
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.btn-about:hover{
+    background-color: var(--primary-color);
+}
+
+/* About Me */
+
+.about-me{
+    margin-top: 8%;
+}
+.about-me h1{
+    text-align: center;
+}
+
+.personal-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6%;
+}
+
+.personal-information{
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+}
+
+.flex {
+    margin-top: 15px;
+    display: flex;
+    gap: 50px;
+    
+}
+
+.flex ul li{
+    text-transform: uppercase;
+    line-height: 40px;
+    font-weight: 300;
+    color: var(--secondary-color);
+}
+
+.flex ul li a{
+    color: var(--secondary-color);
+}
+
+.flex ul a i{
+    margin-top: 19%;
+}
+
+.text-center{
+    text-align: center;
+    font-size: 38px;
+    margin-top: 8%;
+}
+
+.experience-education{
+    display: flex;
+    padding: 20px;
+    height: 350px;
+    justify-content: space-around;
+}
+
+.experience, .education{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.experience div, .education div {
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.text{
+    margin-top: 3%;
+    line-height: 25px;
+    color: var(--secondary-color);
+}
+
+/* Services Section */
+
+.my-services{
+    align-items: center;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.card-3{
+    display: flex;
+    max-width: 1200px; 
+    margin-top: 3%;
+    margin-left: 3%;
+    gap: 35px;
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.card h5{
+    margin-top: 8%;
+}
+
+.card p{
+    margin-top: 8%;
+    margin-bottom: 20%;
+}
+
+.btn-sample{
+    border: solid var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 50px;
+    margin-top: 3%;
+}
+
+.btn-sample:hover{
+    background-color: var(--primary-color);
+}
+
+.card-3a{
+    margin-top: 5%;
+    max-width: 350px;
+    margin-left: 3%;
+    font-size: 18px;
+}
+
+/* Portfolios Section */
+
+.filter-buttons {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 8px 16px;
+    color: #ffffff;
+    border: none;
+    background-color: black;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    
+}
+
+
+.filter-button:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.filter-button:active {
+    animation: bounce 0.5s;
+}
+
+.filter-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0); /* Initial background color is transparent */
+    transition: background-color 0.3s ease; /* Added background-color transition */
+}
+
+.gallery-item img {
+    max-width: 160%;
+    height: auto;
+ transition: transform 0.3s ease;
+}
+
+.gallery-item .magnifying-glass {
+    background-color: var(--primary-color);
+    border-radius: 100px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Change background color to transparent on hover */
+    opacity: 1; /* Change opacity to 1 on hover */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+.gallery-item:hover .magnifying-glass {
+    transform: translate(-50%, -50%) scale(1); /* Increase scale on hover to make it bigger */
+    opacity: 1;
+}
+
+/* Contact */
+
+.message-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-intro{
+    max-width: 400px;
+    padding: 0;
+}
+
+.message-intro p{
+    text-align: justify !important;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 10px;
+    margin-bottom: 12%;
+    margin-top: 5%;
+}
+
+.mailme{
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Adjust the margin as needed */
+    
+}
+
+.mailme i{
+    margin-right: 20px;
+    color: var(--primary-color);
+}
+
+.callme {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Adjust the margin as needed */
+    justify-content: baseline;
+}
+
+.callme i {
+    margin-right: 5px; 
+    margin-left: 0;
+    color: var(--primary-color);
+    
+}
+
+.message-box{
+
+    width: 600px;
+    margin: 20px auto;
+    color: var(--secondary-color);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .meesage-box input, textarea {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .submit {
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    width: 160px;
+    border: solid 4px var(--primary-color);
+    background-color: #020202;
+    border-radius: 50px;
+  }
+
+  .submit:hover{
+    background-color: var(--primary-color);
+  }
+
+  .input-flex{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .input-flex input{
+    width: 48%;
+  }
+
+  .input{
+    color: white;
+    background-color: #252525;
+    border-radius: 16px;
+    font-size: 16px;
+    padding: 16px;
+    border: none;
+
+  }
+
+  .last-div{
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .last-div .icon{
+    margin-right: 25%;
+  }
+
+  .last-div .icon i{
+    font-size: 26px;
+    padding: 12px;
+    border: solid 1px white;
+    border-radius: 100px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .last-div .icon i:hover{
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+  }
+
+  .last-div h4{
+    font-size: 24px;
+  }
+
+  footer{
+    text-align: center;
+    color: #504f4f;
+  }
+
+ 
